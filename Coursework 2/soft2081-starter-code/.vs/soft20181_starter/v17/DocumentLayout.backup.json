@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -131,32 +131,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ManageUser.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "ViewState": "AgIAAAsAAADg8TIzMzMZwA8AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:06:56.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventAppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Models\\EventAppDbContext.cs",
-              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
-              "RelativeToolTip": "soft20181_starter\\Models\\EventAppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:22:25.611Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -180,8 +154,44 @@
               "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAAAUAAABAJDMzMzMLwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T13:13:59.434Z",
+              "WhenOpened": "2025-03-18T13:13:59.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml",
+              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T16:06:05.795Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventAppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Models\\EventAppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
+              "RelativeToolTip": "soft20181_starter\\Models\\EventAppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:22:25.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManageUser.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "ViewState": "AgIAAAsAAADg8TIzMzMZwA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:06:56.162Z"
             },
             {
               "$type": "Document",
@@ -193,8 +203,7 @@
               "RelativeToolTip": "soft20181_starter\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:22:03.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T15:22:03.265Z"
             },
             {
               "$type": "Document",
@@ -206,21 +215,7 @@
               "RelativeToolTip": "soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAB0AAAAAAAAAAAAnwC4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T00:27:01.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ManageUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml",
-              "ToolTip": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T16:06:05.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T00:27:01.141Z"
             },
             {
               "$type": "Document",

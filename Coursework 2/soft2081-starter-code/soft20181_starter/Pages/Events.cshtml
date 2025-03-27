@@ -4,7 +4,6 @@
     ViewBag.Title = "Events";
 }
 
-
 <div class="search-container fade-in">
     <div class="search-bar">
         <label for="search-events" class="sr-only">Search for events</label>
@@ -19,7 +18,21 @@
         </div>
     </div>
 </div>
-<div id="event-container-in-events" class="event-container-in-events fade-in"></div>
+
+<!-- Event container to display the events -->
+<div id="event-container-in-events" class="event-container-in-events fade-in">
+    @foreach (var eventItem in Model.Events)
+    {
+        <div class="event-card">
+            <img src="~/images/@eventItem.Image" alt="Event Image" />
+            <h3>@eventItem.Title</h3>
+            <p>@eventItem.Description</p>
+            <p><strong>Location:</strong> @eventItem.Location</p>
+            <p><strong>Date:</strong> @eventItem.Date.ToString("MMMM dd, yyyy")</p>
+            <p><strong>Time:</strong> @eventItem.Time</p>
+        </div>
+    }
+</div>
 
 @section Scripts {
     <script src="~/js/events.js"></script>
