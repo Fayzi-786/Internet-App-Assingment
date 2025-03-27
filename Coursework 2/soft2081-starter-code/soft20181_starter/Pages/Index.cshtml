@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewBag.Title = "Home Page"; // Set the page title
+}
+
+<div class="hero-container fade-in">
+    <div class="content-wrapper">
+        <div class="text-content">
+            <h1 class="gradient-text">Where Innovation Meets Community</h1>
+            <div class="event-types">
+                <span class="event-tag">Conferences</span>
+                <span class="event-tag">Boot Camps</span>
+                <span class="event-tag">Meetings</span>
+            </div>
+            <p class="description">
+                Discover transformative events designed to elevate your professional
+                journey. Connect, learn, and grow with industry leaders and peers.
+            </p>
+            <a href="/Events" title="see all events">
+                <button class="cta-button">Explore Events</button>
+            </a>
+        </div>
+        <div class="image-grid">
+            <img src="~/Assets/images/conference.jpg" alt="Conference hall" class="grid-img img1" />
+            <img src="~/Assets/images/tech.jpg" alt="Workshop session" class="grid-img img2" />
+            <img src="~/Assets/images/clifton-pavilion-2.jpg" alt="Networking event" class="grid-img img3" />
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/index.js"></script> 
+}

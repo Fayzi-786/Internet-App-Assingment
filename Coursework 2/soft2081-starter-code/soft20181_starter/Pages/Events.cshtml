@@ -1,0 +1,26 @@
+﻿@page
+@model EventsModel
+@{
+    ViewBag.Title = "Events";
+}
+
+
+<div class="search-container fade-in">
+    <div class="search-bar">
+        <label for="search-events" class="sr-only">Search for events</label>
+        <input type="text" id="search-events" placeholder="Search for events, category, or locations..." />
+        <div class="custom-select">
+            <select id="filterSelect">
+                <option value="" selected>All</option>
+                <option value="location">Location</option>
+                <option value="date">Date</option>
+                <option value="title">Title</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div id="event-container-in-events" class="event-container-in-events fade-in"></div>
+
+@section Scripts {
+    <script src="~/js/events.js"></script>
+}
