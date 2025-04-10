@@ -5,7 +5,58 @@
     ViewBag.Title = "Event Detail";
 }
 
-<div class="event-detail-container"></div>
+<div class="event-detail-container">
+    <div class="event-header">
+        <h1>@Model.EventDetails.Title</h1>
+        <p class="event-date">@Model.EventDetails.Date.ToString("MMMM dd, yyyy")</p>
+    </div>
+    <div class="event-body">
+        <p class="event-description">@Model.EventDetails.Description</p>
+        <p class="event-location"><strong>Location:</strong> @Model.EventDetails.Location</p>
+        
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .event-detail-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .event-header h1 {
+                font-size: 2.5em;
+                margin: 0;
+            }
+
+        .event-date {
+            font-size: 1.2em;
+            color: #888;
+        }
+
+        .event-body {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .event-description {
+            margin-bottom: 20px;
+        }
+
+        .event-location, .event-organizer {
+            margin-bottom: 10px;
+        }
+    </style>
+}
 
 @section Scripts {
     <script src="~/js/event-details.js"></script>

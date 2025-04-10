@@ -30,6 +30,7 @@
             <p><strong>Location:</strong> @eventItem.Location</p>
             <p><strong>Date:</strong> @eventItem.Date.ToString("MMMM dd, yyyy")</p>
             <p><strong>Time:</strong> @eventItem.Time</p>
+            <a asp-page="Event_Details" asp-route-id="@eventItem.Id"  class="btn btn-outline-primary">Learn more</a>
         </div>
     }
 </div>
