@@ -13,11 +13,10 @@ wwwroot\css\event-details.css
 wwwroot\css\index.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\js\Contact.js
-wwwroot\js\event-details.js
-wwwroot\js\events.js
-wwwroot\js\index.js
+wwwroot\js\axios.min.js
+wwwroot\js\flowbite.min.js
 wwwroot\js\site.js
+wwwroot\js\sweetalert2.all.min.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -75,3 +74,4 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\vue\vue.js

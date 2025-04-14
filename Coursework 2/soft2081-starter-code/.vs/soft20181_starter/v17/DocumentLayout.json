@@ -11,16 +11,32 @@
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\admin\\events\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\migrations\\20250320135802_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\migrations\\20250320135802_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\event_details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\event_details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,32 +111,8 @@
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\events.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\events.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\event-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\event-details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\migrations\\eventappdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\migrations\\eventappdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\migrations\\20250320135802_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|solutionrelative:soft20181_starter\\migrations\\20250320135802_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3480F3A6-C6A8-4621-B448-34EAB2A8E36C}|soft20181_starter\\soft20181_starter.csproj|c:\\users\\shamsullah fayzi\\source\\repos\\internet-app-assingment_updated\\coursework 2\\soft2081-starter-code\\soft20181_starter\\migrations\\20250323163340_addedusermangement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -172,7 +156,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -180,31 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T00:27:01.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Events.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Events.cshtml.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Events.cshtml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:17:05.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Event_Details.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Event_Details.cshtml.cs",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Event_Details.cshtml.cs",
@@ -216,43 +176,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAADgv6UAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:14:04.889Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml.cs",
               "RelativeToolTip": "soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA2wCQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T10:47:19.557Z"
+              "WhenOpened": "2025-04-10T10:47:19.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Program.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Program.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Program.cs",
-              "RelativeToolTip": "soft20181_starter\\Program.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T23:22:49.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ManageUser.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml",
@@ -264,260 +201,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T00:27:01.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml",
               "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml",
               "RelativeToolTip": "soft20181_starter\\Pages\\Admin\\Events\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwFUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-10T10:47:13.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Event_Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Event_Details.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Event_Details.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Event_Details.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Event_Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T22:35:52.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T13:13:59.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T11:07:21.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T13:41:34.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Events.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Events.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Events.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-09T22:37:11.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ManageUser.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAQwG0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:06:56.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Models\\Event.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Event.cs",
-              "RelativeToolTip": "soft20181_starter\\Models\\Event.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T10:48:57.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250410051135_Init.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250410051135_Init.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250410051135_Init.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250410051135_Init.cs",
-              "RelativeToolTip": "soft20181_starter\\Migrations\\20250410051135_Init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:11:35.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20250405121617_Added-EvenClass.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
-              "RelativeToolTip": "soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T12:16:18.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\UsersInfo.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\UsersInfo.cs",
-              "RelativeToolTip": "soft20181_starter\\Models\\UsersInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:10:15.646Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "RegisterConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T09:35:19.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:22:03.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\appsettings.json",
-              "RelativeDocumentMoniker": "soft20181_starter\\appsettings.json",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\appsettings.json",
-              "RelativeToolTip": "soft20181_starter\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T05:13:00.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EventAppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Models\\EventAppDbContext.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
-              "RelativeToolTip": "soft20181_starter\\Models\\EventAppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Program.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Program.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Program.cs",
+              "RelativeToolTip": "soft20181_starter\\Program.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:22:25.611Z"
+              "WhenOpened": "2025-03-09T23:22:49.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Models\\Contact.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Contact.cs",
-              "RelativeToolTip": "soft20181_starter\\Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:22:18.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Contact.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Contact.cshtml.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml.cs",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Contact.cshtml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T10:40:49.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml",
-              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml",
-              "RelativeToolTip": "soft20181_starter\\Pages\\Contact.cshtml",
-              "ViewState": "AgIAAB8AAAAAMDMzM7MSwAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:22:09.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "events.js",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\events.js",
-              "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\js\\events.js",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\events.js",
-              "RelativeToolTip": "soft20181_starter\\wwwroot\\js\\events.js",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-27T13:43:06.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "event-details.js",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\event-details.js",
-              "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\js\\event-details.js",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\event-details.js",
-              "RelativeToolTip": "soft20181_starter\\wwwroot\\js\\event-details.js",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-27T13:43:27.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Contact.js",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\Contact.js",
-              "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\js\\Contact.js",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\Contact.js",
-              "RelativeToolTip": "soft20181_starter\\wwwroot\\js\\Contact.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-27T13:43:25.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 5,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\js\\site.js",
@@ -529,19 +251,247 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\index.js",
-              "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\js\\index.js",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\index.js",
-              "RelativeToolTip": "soft20181_starter\\wwwroot\\js\\index.js",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-27T13:43:17.597Z"
+              "DocumentIndex": 3,
+              "Title": "Events.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Events.cshtml.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Events.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T13:17:05.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 4,
+              "Title": "Events.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Events.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Events.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Events.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T22:37:11.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250320135802_first.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135802_first.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250320135802_first.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135802_first.cs",
+              "RelativeToolTip": "soft20181_starter\\Migrations\\20250320135802_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T13:58:03.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T11:07:21.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T13:13:59.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Event_Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Event_Details.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Event_Details.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Event_Details.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Event_Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T22:35:52.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAADgv6UAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:14:04.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T13:41:34.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ManageUser.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Pages\\ManageUser.cshtml.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAQwG0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:06:56.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Event.cs",
+              "RelativeToolTip": "soft20181_starter\\Models\\Event.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T10:48:57.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250410051135_Init.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250410051135_Init.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250410051135_Init.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250410051135_Init.cs",
+              "RelativeToolTip": "soft20181_starter\\Migrations\\20250410051135_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:11:35.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250405121617_Added-EvenClass.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
+              "RelativeToolTip": "soft20181_starter\\Migrations\\20250405121617_Added-EvenClass.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:16:18.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsersInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\UsersInfo.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Models\\UsersInfo.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\UsersInfo.cs",
+              "RelativeToolTip": "soft20181_starter\\Models\\UsersInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:10:15.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T09:35:19.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Index.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:22:03.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\appsettings.json",
+              "RelativeDocumentMoniker": "soft20181_starter\\appsettings.json",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\appsettings.json",
+              "RelativeToolTip": "soft20181_starter\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T05:13:00.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EventAppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Models\\EventAppDbContext.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\EventAppDbContext.cs",
+              "RelativeToolTip": "soft20181_starter\\Models\\EventAppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:22:25.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Models\\Contact.cs",
+              "RelativeToolTip": "soft20181_starter\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:22:18.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Contact.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml.cs",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Contact.cshtml.cs",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml.cs",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Contact.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:40:49.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml",
+              "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Contact.cshtml",
+              "RelativeToolTip": "soft20181_starter\\Pages\\Contact.cshtml",
+              "ViewState": "AgIAAB8AAAAAMDMzM7MSwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:22:09.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "EventAppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\EventAppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\EventAppDbContextModelSnapshot.cs",
@@ -553,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 28,
               "Title": "20250323163340_AddedUserMangement.cs",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250323163340_AddedUserMangement.cs",
               "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250323163340_AddedUserMangement.cs",
@@ -565,19 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20250320135802_first.cs",
-              "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135802_first.cs",
-              "RelativeDocumentMoniker": "soft20181_starter\\Migrations\\20250320135802_first.cs",
-              "ToolTip": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135802_first.cs",
-              "RelativeToolTip": "soft20181_starter\\Migrations\\20250320135802_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:58:03.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "20250320135658_first.cs",
               "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135658_first.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320135658_first.cs",
@@ -589,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "20250320134934_AddedRoleManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320134934_AddedRoleManager.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\user\\2nd Year BCs\\Internet \u0026 application programme\\Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Migrations\\20250320134934_AddedRoleManager.cs",
@@ -601,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "soft20181_starter\\Properties\\launchSettings.json",
@@ -613,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Shared\\_LoginPartial.cshtml",
@@ -625,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -637,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 35,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\_ViewStart.cshtml",
@@ -649,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "soft20181_starter\\Pages\\_ViewImports.cshtml",
@@ -661,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Shamsullah Fayzi\\source\\repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "soft20181_starter\\wwwroot\\css\\site.css",

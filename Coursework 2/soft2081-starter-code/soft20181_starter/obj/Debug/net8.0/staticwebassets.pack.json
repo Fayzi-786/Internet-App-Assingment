@@ -65,24 +65,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\Contact.js",
-      "PackagePath": "staticwebassets\\js\\Contact.js"
+      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\axios.min.js",
+      "PackagePath": "staticwebassets\\js\\axios.min.js"
     },
     {
-      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\event-details.js",
-      "PackagePath": "staticwebassets\\js\\event-details.js"
-    },
-    {
-      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\events.js",
-      "PackagePath": "staticwebassets\\js\\events.js"
-    },
-    {
-      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\index.js",
-      "PackagePath": "staticwebassets\\js\\index.js"
+      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\flowbite.min.js",
+      "PackagePath": "staticwebassets\\js\\flowbite.min.js"
     },
     {
       "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\js\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert2.all.min.js"
     },
     {
       "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -311,6 +307,10 @@
     {
       "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\vue\\vue.js",
+      "PackagePath": "staticwebassets\\vue\\vue.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.soft20181_starter.props",

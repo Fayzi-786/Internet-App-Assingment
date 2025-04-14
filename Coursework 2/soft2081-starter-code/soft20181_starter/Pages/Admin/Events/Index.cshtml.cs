@@ -5,6 +5,10 @@ using soft20181_starter.Models;
 
 namespace soft20181_starter.Pages.Admin.Events
 {
+    public class DeleteEventRequest
+    {
+        public int Id { get; set; }
+    }
     [Authorize(Roles = "Admin")]
     public class IndexModel : PageModel
     {
@@ -20,21 +24,33 @@ namespace soft20181_starter.Pages.Admin.Events
             Events = db.Events.ToList();
             return Page();
         }
-        public PageResult OnPostDelete(int id)
-        {
-            // delete event
-            var eventToDelete = db.Events.Find(id);
-            if (eventToDelete != null)
+        public JsonResult OnPostDeleteEvent([FromBody] DeleteEventRequest request)
             {
-                db.Events.Remove(eventToDelete);
-                db.SaveChanges();
+            try
+            {
+                // delete event
+                var eventToDelete = db.Events.Find(request.Id);
+                if (eventToDelete != null)
+                {
+                    db.Events.Remove(eventToDelete);
+                    db.SaveChanges();
+                    return new JsonResult(new { success = true, message = "Event deleted succefully" });
+                }
+                return new JsonResult(new { success = false, message = "Could not find event" });
+
             }
-            return Page();
+            catch (Exception ex)
+            {
+
+                return new JsonResult(new { success = false, message = ex.Message });
+            }
+           
+            
         }
         public IActionResult OnPostEdit(int id)
         {
             // redirect to edit page
             return RedirectToPage("Edit", new { id = id });
         }
-    }
+    }   
 }

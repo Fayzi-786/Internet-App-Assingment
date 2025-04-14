@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Manage Events";
 }
+@Html.AntiForgeryToken()
 
 <h1>@ViewData["Title"]</h1>
 
@@ -22,13 +23,13 @@
     <tbody>
         @foreach (var eventItem in Model.Events)
         {
-            <tr>
+            <tr id="event-@eventItem.Id">
                 <td>@eventItem.Title</td>
                 <td>@eventItem.Date.ToString("MM/dd/yyyy")</td>
                 <td>@eventItem.Location</td>
                 <td>
                     <a class="btn btn-warning btn-sm" asp-page="/Admin/Events/Edit" asp-route-id="@eventItem.Id">Edit</a>
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" data-id="@eventItem.Id" data-name="@eventItem.Title">Delete</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" data-id="@eventItem.Id" id="delete" data-name="@eventItem.Title">Delete</button>
                 </td>
             </tr>
         }
@@ -49,25 +50,65 @@
                 Are you sure you want to delete the event <strong id="eventName"></strong>?
             </div>
             <div class="modal-footer">
-                <form method="post" asp-action="OnPostDelete" >
                     <input type="hidden" id="id" name="id" value="" />
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
+                    <button type="button" id="confirmDelete"  class="btn btn-danger">Delete</button>
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
-        $('#deleteModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
-            var eventId = button.data('id');
-            var eventName = button.data('name');
-            var modal = $(this);
-            modal.find('#id').val(eventId);
-            modal.find('#eventName').text(eventName);
+        let currentEvent = null;
+                        function deleteEvent(id) {
+            axios.post(`?handler=DeleteEvent`,
+                { id: id },
+                {
+                    headers: {
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value,
+                        'Content-Type': 'application/json'
+                    }
+                }
+            )
+            .then(response => {
+                if (response.data.success) {
+                    document.getElementById('event-' + id).remove();
+                    alert(response.data.message);
+
+                    // ✅ Close the Bootstrap modal
+                    const modalEl = document.getElementById('deleteModal');
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    modalInstance.hide();
+
+                    currentEvent = null; // reset for safety
+                } else {
+                    alert('Error: ' + response.data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Request failed: ' + error.message);
+            });
+        }
+
+
+        $('#delete').on('click', function (event) {
+           
+          currentEvent= document.getElementById("delete").getAttribute("data-id");
+          
         });
+
+        // Delete confirmation
+        $("#confirmDelete").on('click', function() {
+            if (!currentEvent){ 
+                return;
+            }
+            deleteEvent(currentEvent)
+            
+        });
+                
     </script>
 }
