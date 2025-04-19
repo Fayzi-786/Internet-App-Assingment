@@ -1,0 +1,22 @@
+
+                                Gather Up
+
+TODOS::
+1. add subtitle for event in json file
+2. add several images if needed --> you might want to change the code if you have implemented it. like you need to change the code where you render the images.
+3. add detailed description for every event and shorten the description in events page where you list all events
+4. add animations
+5. add category for event like bootcamp, conference ...
+
+
+
+
+
+ .customization-panel {
+    width: 90%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }

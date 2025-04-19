@@ -1,0 +1,72 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Tech Conference 2025",
+            "icon": "fa-laptop",
+            "date": "March 15-17, 2025",
+            "description": "Join us for the most innovative tech conference of the year!",
+            "location": "London, UK",
+            "image": "tech.jpg",
+            "time": "08:45 PM"
+
+        },
+        
+        {
+            "id": 2,
+            "title": "Java Intro",
+            "icon": "fa-graduation-cap", 
+            "date": "January 20, 2025",
+            "description": "Introduction to OOP concept with Java.",
+            "location": "Nottingham Trent University, UK",
+            "image": "Java.jpg",
+            "time": "12:00 AM"
+
+        },
+        {
+            "id": 3,
+            "title": "Unlocking Potential",
+            "icon": "fa-rocket",
+            "date": "June 10-20, 2025", 
+            "description": "Unlocking Potential: A Meeting on Advancing Education.",
+            "location": "Manchester, UK",
+            "image": "unlock-potential.jpg",
+            "time": "7:00 PM"
+
+        },
+        {
+            "id": 4,
+            "title": "Shaping the Future",
+            "icon": "fa-microphone",
+            "date": "Sep 12-14, 2025",
+            "description": "Join us at the Annual Education Conference, where educators, thought leaders, and innovators come together.",
+            "location": "Birmingham, UK", 
+            "image": "shape-theFuture.jpg",
+            "time": "10:00 AM"
+
+        },
+        {
+            "id": 5,
+            "title": "Startup Summit",
+            "icon": "fa-rocket",
+            "date": "December 8-10, 2024",
+            "description": "Network with innovative entrepreneurs and investors.",
+            "location": "Nottingham, UK",
+            "image": "summit.jpg",
+            "time": "9:30 AM"
+
+        },
+        {
+            "id": 6,
+            "title": "Collaborative Insights: Shaping the Future of Learning",
+            "icon": "fa-users", 
+            "date": "January 20, 2025",
+            "description": "A meeting to explore innovative strategies and collaborative approaches to shape the future of education.",
+            "location": "NTU Clifton Campus , UK",
+            "image": "clifton-pavilion-2.jpg",
+            "time": "10:00 AM"
+        }
+     
+    ]
+}
+
