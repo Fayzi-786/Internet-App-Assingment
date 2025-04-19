@@ -121,9 +121,6 @@ a:hover {
   margin-top: 200px;
 }
 
-footer {
-  min-height: 20vh;
-}
 
 .content-wrapper {
   max-width: 1400px;
@@ -392,13 +389,6 @@ article p {
   text-align: left;
 }
 
-footer {
-  border-top: 1px solid var(--text-primary);
-  box-shadow: 0 8px 15px var(--shadow-color);
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
 
 .customization-panel {
 

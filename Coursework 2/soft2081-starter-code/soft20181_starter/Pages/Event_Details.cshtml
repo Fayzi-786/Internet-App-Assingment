@@ -2,62 +2,119 @@
 @model Event_DetailsModel
 
 @{
-    ViewBag.Title = "Event Detail";
+    ViewBag.Title = "Event Details";
+    
 }
+@Html.AntiForgeryToken()
 
-<div class="event-detail-container">
-    <div class="event-header">
-        <h1>@Model.EventDetails.Title</h1>
-        <p class="event-date">@Model.EventDetails.Date.ToString("MMMM dd, yyyy")</p>
-    </div>
-    <div class="event-body">
-        <p class="event-description">@Model.EventDetails.Description</p>
-        <p class="event-location"><strong>Location:</strong> @Model.EventDetails.Location</p>
-        
+<div class="container py-5">
+    <div class="card shadow-lg rounded overflow-hidden border-0">
+        <div class="row g-0">
+            
+            @if (!string.IsNullOrEmpty(Model.EventDetails.Image))
+            {
+                <div class="col-md-5">
+                    <img src="@Model.EventDetails.Image" class="img-fluid h-100 object-fit-cover" style="object-fit: cover;" alt="Event Image">
+                </div>
+            }
+            <div class="col-md-7">
+                <div class="card-body p-4">
+                    <h2 class="card-title display-5">@Model.EventDetails.Title</h2>
+                    <p class="text-muted mb-1"><i class="bi bi-calendar-event me-2"></i> @Model.EventDetails.Date.ToString("MMMM dd, yyyy")</p>
+                    <p class="text-muted mb-3"><i class="bi bi-geo-alt me-2"></i> <strong>@Model.EventDetails.Location</strong></p>
+
+                    <p class="card-text lead">@Model.EventDetails.Description</p>
+
+                    <div class="mt-4">
+                        <a href="/Events" class="btn btn-outline-primary rounded-pill px-4">Back to Events</a>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <button id="registerButton"
+                                    class="btn @(Model.IsRegistered ? "btn-danger" : "btn-primary") rounded-pill px-4"
+                                    data-event-id="@Model.EventDetails.Id"
+                                    data-is-registered="@Model.IsRegistered.ToString().ToLower()">
+                                @(Model.IsRegistered ? "Unregister" : "Register for Event")
+                            </button>
+                        }
+                        else
+                        {
+                            <a href="/Identity/Account/Login" class="btn btn-primary rounded-pill px-4">Login to Register</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 @section Styles {
+   
     <style>
-        .event-detail-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .card-title {
+            font-weight: 700;
         }
 
-        .event-header {
-            text-align: center;
-            margin-bottom: 20px;
+        .object-fit-cover {
+            object-fit: cover;
         }
 
-            .event-header h1 {
-                font-size: 2.5em;
-                margin: 0;
-            }
-
-        .event-date {
-            font-size: 1.2em;
-            color: #888;
-        }
-
-        .event-body {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .event-description {
-            margin-bottom: 20px;
-        }
-
-        .event-location, .event-organizer {
-            margin-bottom: 10px;
+        .card-body p i {
+            color: #0d6efd;
         }
     </style>
 }
 
 @section Scripts {
-    <script src="~/js/event-details.js"></script>
+   
+    <script>
+        document.getElementById('registerButton').addEventListener('click', function() {
+                            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            const eventId = this.getAttribute('data-event-id');
+            const isRegistered = this.textContent.trim() === 'Unregister';
+            const url = isRegistered ? '?handler=Unregister' : '?handler=Register';
+            console.log(url);
+            axios.post(`${url}&eventId=${eventId}`,null,{
+                 headers: {
+            'RequestVerificationToken': token
+        }
+            })
+                .then(response => {
+                    if (response.data.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: isRegistered ? 'You have been unregistered from the event.' : 'You have successfully registered for the event!',
+                            confirmButtonColor: '#0d6efd'
+                        });
+
+                        // Toggle button state
+                        if (isRegistered) {
+                            this.textContent = 'Register for Event';
+                            this.classList.remove('btn-danger');
+                            this.classList.add('btn-primary');
+                        } else {
+                            this.textContent = 'Unregister';
+                            this.classList.remove('btn-primary');
+                            this.classList.add('btn-danger');
+                        }
+                    }
+                })
+                .catch(error => {
+                    let errorMessage = 'An error occurred. Please try again.';
+                    if (error.response && error.response.status === 409) {
+                        errorMessage = error.response.data;
+                    } else if (error.response && error.response.status === 401) {
+                        errorMessage = 'Please login to register for events.';
+                    }
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: errorMessage,
+                        confirmButtonColor: '#0d6efd'
+                    });
+                });
+        });
+    </script>
 }

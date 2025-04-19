@@ -309,6 +309,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg"
+    },
+    {
       "Id": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\vue\\vue.js",
       "PackagePath": "staticwebassets\\vue\\vue.js"
     },

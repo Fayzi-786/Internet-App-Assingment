@@ -12,11 +12,11 @@ namespace soft20181_starter.Models
 
         public DbSet<Event> Events { get; set; }
         public DbSet<Contact> ContactTable { get; set; }
-
+        public DbSet<UserEventRegistration> userEventRegistrations { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-
+            builder.Entity<UserEventRegistration>().HasKey(a => new {a.UserId, a.EventId });
             // Configure the Event entity
             builder.Entity<Event>(entity =>
             {

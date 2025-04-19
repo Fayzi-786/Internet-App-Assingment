@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZLRSnvIPpYHbFyL2vFNiKu68KdQg+f2aDiRg/DfDiEk=",
+  "Hash": "EmRsB5vL9EkrvTsX+4ZyksoJ6YoiW32kKdi8xDATU5s=",
   "Source": "soft20181_starter",
   "BasePath": "_content/soft20181_starter",
   "Mode": "Default",
@@ -1585,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y0w358se5l",
-      "Integrity": "HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0=",
+      "Fingerprint": "p8zctb667n",
+      "Integrity": "aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\index.css"
@@ -2915,6 +2915,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",
+      "SourceId": "soft20181_starter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\",
+      "BasePath": "_content/soft20181_starter",
+      "RelativePath": "uploads/6ed5b4c2-942c-4c9a-97d0-60a95809b5e4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mwuo848kcj",
+      "Integrity": "ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\vue\\vue.js",
       "SourceId": "soft20181_starter",
       "SourceType": "Discovered",
@@ -3932,7 +3953,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10792"
+          "Value": "10588"
         },
         {
           "Name": "Content-Type",
@@ -3940,11 +3961,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0=\""
+          "Value": "\"aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 04:59:32 GMT"
+          "Value": "Sat, 19 Apr 2025 18:35:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3954,12 +3975,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0="
+          "Value": "sha256-aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA="
         }
       ]
     },
     {
-      "Route": "css/index.y0w358se5l.css",
+      "Route": "css/index.p8zctb667n.css",
       "AssetFile": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\css\\index.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3969,7 +3990,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10792"
+          "Value": "10588"
         },
         {
           "Name": "Content-Type",
@@ -3977,11 +3998,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0=\""
+          "Value": "\"aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 04:59:32 GMT"
+          "Value": "Sat, 19 Apr 2025 18:35:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3991,7 +4012,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y0w358se5l"
+          "Value": "p8zctb667n"
         },
         {
           "Name": "label",
@@ -3999,7 +4020,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0="
+          "Value": "sha256-aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA="
         }
       ]
     },
@@ -11550,6 +11571,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yGrxGoG0kjMkWt7l9zrwrQnzNOD+hRMJPihWriXVWyc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",
+      "AssetFile": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4746596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 18:10:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.mwuo848kcj.jpg",
+      "AssetFile": "C:\\Users\\Shamsullah Fayzi\\Source\\Repos\\Internet-App-Assingment_updated\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4746596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 18:10:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mwuo848kcj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE="
         }
       ]
     },

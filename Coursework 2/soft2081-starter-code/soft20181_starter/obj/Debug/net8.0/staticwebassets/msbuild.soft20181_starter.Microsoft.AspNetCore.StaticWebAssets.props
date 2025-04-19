@@ -228,8 +228,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>y0w358se5l</Fingerprint>
-      <Integrity>HrbRe6Bc1VWjM++AlP+YqrkUWe59s2l1yyhruNnyLP0=</Integrity>
+      <Fingerprint>p8zctb667n</Fingerprint>
+      <Integrity>aWb4OQA8HNcaq7qFJv1yo6hrB3P3FjYAl/z9EHy7TDA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\index.css'))</OriginalItemSpec>
@@ -1385,6 +1385,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\soft20181_starter.8kzjkbl1jg.bundle.scp.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>soft20181_starter</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/soft20181_starter</BasePath>
+      <RelativePath>uploads/6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mwuo848kcj</Fingerprint>
+      <Integrity>ijX5xu1xOXe63rtgVMHJbjEqlVr0XxpdsVhQ5zfVXBE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vue\vue.js'))">
       <SourceType>Package</SourceType>

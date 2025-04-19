@@ -25,6 +25,6 @@ namespace soft20181_starter.Models
         [Required(ErrorMessage = "Time is required")]
         public string Time { get; set; }
 
-        public string Image { get; set; }
+        public string Image { get; set; } = "";
     }
 }
