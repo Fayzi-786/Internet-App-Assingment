@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wzbc8oeArpi+DG8GvgqwIYqN9uS3sT3wTWpbh25MS8U=",
+  "Hash": "xm5VoGdVnAKgzyRlO3M5t4qYtcIdi+RUpmBbpOFWg+M=",
   "Source": "soft20181_starter",
   "BasePath": "_content/soft20181_starter",
   "Mode": "Default",
@@ -2637,6 +2637,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\user\\2nd Year BCs\\Internet & application programme\\Internet-App-Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\478d6d3d-d3bc-47e7-92e0-de2a41c7b956.jpg",
+      "SourceId": "soft20181_starter",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\2nd Year BCs\\Internet & application programme\\Internet-App-Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\",
+      "BasePath": "_content/soft20181_starter",
+      "RelativePath": "uploads/478d6d3d-d3bc-47e7-92e0-de2a41c7b956.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\478d6d3d-d3bc-47e7-92e0-de2a41c7b956.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\2nd Year BCs\\Internet & application programme\\Internet-App-Assingment\\Coursework 2\\soft2081-starter-code\\soft20181_starter\\wwwroot\\uploads\\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg",

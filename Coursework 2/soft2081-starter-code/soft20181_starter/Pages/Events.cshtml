@@ -4,6 +4,10 @@
     ViewBag.Title = "Events";
 }
 
+@section Styles {
+    <link rel="stylesheet" href="~/css/event.css" />
+}
+
 <div class="search-container fade-in">
     <div class="search-bar">
         <label for="search-events" class="sr-only">Search for events</label>
@@ -19,17 +23,19 @@
     </div>
 </div>
 
-<!-- Event container to display the events -->
-<div id="event-container-in-events" class="event-container-in-events fade-in">
+<!-- Events Grid -->
+<div id="event-container-in-events" class="event-grid fade-in">
     @foreach (var eventItem in Model.Events)
     {
         <div class="event-card">
-            <h3>@eventItem.Title</h3>
-            <p>@eventItem.Description</p>
-            <p><strong>Location:</strong> @eventItem.Location</p>
-            <p><strong>Date:</strong> @eventItem.Date.ToString("MMMM dd, yyyy")</p>
-            <p><strong>Time:</strong> @eventItem.Time</p>
-            <a asp-page="Event_Details" asp-route-id="@eventItem.Id"  class="btn btn-outline-primary">Learn more</a>
+            <div class="event-content">
+                <h3 class="event-title">@eventItem.Title</h3>
+                <p class="event-description">@eventItem.Description</p>
+                <p><strong>Location:</strong> @eventItem.Location</p>
+                <p><strong>Date:</strong> @eventItem.Date.ToString("MMMM dd, yyyy")</p>
+                <p><strong>Time:</strong> @eventItem.Time</p>
+                <a asp-page="Event_Details" asp-route-id="@eventItem.Id" class="btn btn-outline-primary">Learn more</a>
+            </div>
         </div>
     }
 </div>
