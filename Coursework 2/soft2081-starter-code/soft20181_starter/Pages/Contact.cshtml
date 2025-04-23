@@ -1,51 +1,79 @@
 ﻿@page
 @model soft20181_starter.Pages.ContactModel
 @{
-    ViewBag.Title = "Contact Us"; // Set the page title
+    ViewData["Title"] = "Contact Us";
 }
 
-<div class="contact-section fade-in">
-    <h1>Contact Us</h1>
-    <p>
-        We'd love to hear from you. Please fill out the form or use the contact
-        details below.
-    </p>
-    @Model.FormMessage
-    <div class="contact-container">
-        <div class="form-container">
-            <h2>Get in Touch</h2>
-            <form method="post">
-                <div class="form-group">
-                    <label asp-for="ContactInfo.Name"></label>
-                    <input asp-for="ContactInfo.Name" class="form-control" placeholder="Your Name" />
-                    <span asp-validation-for="ContactInfo.Name" class="text-danger"></span>
+<div class="min-h-screen bg-gray-50 py-10 px-6 fade-in">
+    <div class="max-w-5xl mx-auto space-y-10">
+
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Contact Us</h1>
+            <p class="mt-2 text-gray-600 max-w-2xl mx-auto">
+                We'd love to hear from you. Please fill out the form or use the contact details below.
+            </p>
+            @if (!string.IsNullOrEmpty(Model.FormMessage))
+            {
+                <div class="mt-4 text-green-600 font-semibold">
+                    @Model.FormMessage
                 </div>
-                <div class="form-group">
-                    <label asp-for="ContactInfo.Email"></label>
-                    <input asp-for="ContactInfo.Email" class="form-control" placeholder="Name@example.com" />
-                    <span asp-validation-for="ContactInfo.Email" class="text-danger"></span>
-                </div>
-               
-                <div class="form-group">
-                    <label asp-for="ContactInfo.Message"></label>
-                    <textarea asp-for="ContactInfo.Message" class="form-control" placeholder="What's on your mind! Let us know!"></textarea>
-                    <span asp-validation-for="ContactInfo.Message" class="text-danger"></span>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            }
         </div>
-        <div class="info-container">
-            <h2>Contact Details</h2>
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:shaheer.fayzi@gmail.com">shaheer.fayzi@gmail.com</a>
-            </p>
-            <p><strong>Phone:</strong> +44 7467825599</p>
-            <p>
-                <strong>Follow Us:</strong>
-                <a href="https://www.linkedin.com/in/shaheerullah-fayzi-9598052a9/">Linked In -</a>
-                <a href="#">Instagram</a>
-            </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <!-- Contact Form -->
+            <div class="bg-white shadow-lg rounded-2xl p-6 space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Get in Touch</h2>
+                <form method="post" class="space-y-4">
+                    <div>
+                        <label asp-for="ContactInfo.Name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input asp-for="ContactInfo.Name"
+                               placeholder="Your Name"
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                        <span asp-validation-for="ContactInfo.Name" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div>
+                        <label asp-for="ContactInfo.Email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input asp-for="ContactInfo.Email"
+                               placeholder="name@example.com"
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                        <span asp-validation-for="ContactInfo.Email" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div>
+                        <label asp-for="ContactInfo.Message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea asp-for="ContactInfo.Message"
+                                  placeholder="What's on your mind? Let us know!"
+                                  rows="4"
+                                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        <span asp-validation-for="ContactInfo.Message" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="bg-white shadow-lg rounded-2xl p-6 space-y-4">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Contact Details</h2>
+
+                <p class="text-gray-600">
+                    <strong>Email:</strong>
+                    <a href="mailto:shaheer.fayzi@gmail.com" class="text-indigo-600 hover:underline">shaheer.fayzi@gmail.com</a>
+                </p>
+                <p class="text-gray-600"><strong>Phone:</strong> +44 7467825599</p>
+                <p class="text-gray-600">
+                    <strong>Follow Us:</strong>
+                    <a href="https://www.linkedin.com/in/shaheerullah-fayzi-9598052a9/"
+                       class="text-indigo-600 hover:underline">LinkedIn</a>
+                    <span class="mx-2 text-gray-400">|</span>
+                    <a href="#" class="text-indigo-600 hover:underline">Instagram</a>
+                </p>
+            </div>
         </div>
     </div>
 </div>

@@ -4,99 +4,85 @@
     ViewData["Title"] = "My Registered Events";
 }
 
-<div class="container py-5">
-    <h1 class="mb-4">My Registered Events</h1>
+<div class="min-h-screen bg-gray-50 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">My Registered Events</h1>
 
-    @if (Model.RegisteredEvents.Any())
-    {
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            @foreach (var eventItem in Model.RegisteredEvents)
-            {
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
+        @if (Model.RegisteredEvents.Any())
+        {
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                @foreach (var eventItem in Model.RegisteredEvents)
+                {
+                    <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
                         @if (!string.IsNullOrEmpty(eventItem.Event.Image))
                         {
-                            <img src="@eventItem.Event.Image" class="card-img-top" alt="@eventItem.Event.Title" style="height: 200px; object-fit: cover;">
+                            <img src="@eventItem.Event.Image" alt="@eventItem.Event.Title"
+                                 class="w-full h-48 object-cover">
                         }
-                        <div class="card-body">
-                            <h5 class="card-title">@eventItem.Event.Title</h5>
-                            <p class="card-text text-muted">
-                                <i class="bi bi-calendar-event"></i> @eventItem.Event.Date.ToString("MMMM dd, yyyy")<br>
-                                <i class="bi bi-clock"></i> @eventItem.Event.Time<br>
-                                <i class="bi bi-geo-alt"></i> @eventItem.Event.Location
-                            </p>
-                            <p class="card-text">@eventItem.Event.Description</p>
+                        <div class="p-6 space-y-3">
+                            <h2 class="text-xl font-semibold text-gray-900">@eventItem.Event.Title</h2>
+                            <div class="text-sm text-gray-500 space-y-1">
+                                <p><i class="bi bi-calendar-event mr-1"></i>@eventItem.Event.Date.ToString("MMMM dd, yyyy")</p>
+                                <p><i class="bi bi-clock mr-1"></i>@eventItem.Event.Time</p>
+                                <p><i class="bi bi-geo-alt mr-1"></i>@eventItem.Event.Location</p>
+                            </div>
+                            <p class="text-gray-700 text-sm">@eventItem.Event.Description</p>
                         </div>
-                        <div class="card-footer bg-transparent">
+                        <div class="px-6 pb-6 flex justify-between items-center border-t border-gray-200 pt-4">
                             @if (eventItem.Event.Date >= DateTime.Today)
                             {
-                                <button class="btn btn-danger btn-sm unregister-btn"
+                                <button class="text-white bg-red-600 hover:bg-red-700 font-medium rounded-lg text-sm px-4 py-2 unregister-btn transition"
                                         data-event-id="@eventItem.Event.Id">
                                     Unregister
                                 </button>
                             }
                             else
                             {
-                                <span class="text-muted">Event has passed</span>
+                                <span class="text-sm text-gray-400 italic">Event has passed</span>
                             }
-                            <span class="float-end text-muted small">
-                                Registered on @eventItem.RegistrationDate.ToString("MMM dd, yyyy")
-                            </span>
+                            <span class="text-sm text-gray-400">Registered on @eventItem.RegistrationDate.ToString("MMM dd, yyyy")</span>
                         </div>
                     </div>
-                </div>
-            }
-        </div>
-    }
-    else
-    {
-        <div class="alert alert-info">
-            You haven't registered for any events yet.
-        </div>
-    }
+                }
+            </div>
+        }
+        else
+        {
+            <div class="bg-blue-50 text-blue-700 px-6 py-4 rounded-lg shadow-sm mt-4">
+                You haven't registered for any events yet.
+            </div>
+        }
+    </div>
 </div>
 
-@section Styles {
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
-}
 
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
     <script>
         document.querySelectorAll('.unregister-btn').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const eventId = this.getAttribute('data-event-id');
-                const card = this.closest('.card');
+                const card = this.closest('.bg-white');
 
                 Swal.fire({
                     title: 'Are you sure?',
                     text: "You won't be able to attend this event if you unregister!",
                     icon: 'warning',
                     showCancelButton: true,
-                    confirmButtonColor: '#d33',
-                    cancelButtonColor: '#3085d6',
+                    confirmButtonColor: '#dc2626',
+                    cancelButtonColor: '#3b82f6',
                     confirmButtonText: 'Yes, unregister!'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         axios.post('/Event_Details?handler=Unregister&eventId=' + eventId)
                             .then(response => {
                                 if (response.data.success) {
-                                    Swal.fire(
-                                        'Unregistered!',
-                                        'You have been unregistered from the event.',
-                                        'success'
-                                    );
+                                    Swal.fire('Unregistered!', 'You have been unregistered from the event.', 'success');
                                     card.remove();
                                 }
                             })
-                            .catch(error => {
-                                Swal.fire(
-                                    'Error!',
-                                    'An error occurred while unregistering.',
-                                    'error'
-                                );
+                            .catch(() => {
+                                Swal.fire('Error!', 'An error occurred while unregistering.', 'error');
                             });
                     }
                 });

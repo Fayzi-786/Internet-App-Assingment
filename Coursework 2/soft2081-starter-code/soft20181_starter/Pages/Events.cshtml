@@ -4,41 +4,146 @@
     ViewBag.Title = "Events";
 }
 
-@section Styles {
-    <link rel="stylesheet" href="~/css/event.css" />
-}
+<div class="bg-white">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Discover Amazing Events
+            </h1>
+            <p class="mt-6 text-xl text-indigo-100 max-w-3xl mx-auto">
+                Find conferences, workshops, and networking events to grow your skills and connections
+            </p>
+        </div>
+    </div>
 
-<div class="search-container fade-in">
-    <div class="search-bar">
-        <label for="search-events" class="sr-only">Search for events</label>
-        <input type="text" id="search-events" placeholder="Search for events, category, or locations..." />
-        <div class="custom-select">
-            <select id="filterSelect">
-                <option value="" selected>All</option>
-                <option value="location">Location</option>
-                <option value="date">Date</option>
-                <option value="title">Title</option>
-            </select>
+    <!-- Search and Filter Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-10">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-grow relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input id="search-events"
+                           type="text"
+                           class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:ring-indigo-500 focus:border-indigo-500"
+                           placeholder="Search events, locations, categories...">
+                </div>
+                <div class="w-full md:w-auto">
+                    <select id="filterSelect"
+                            class="block w-full pl-3 pr-10 py-3 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-lg">
+                        <option value="" selected>All Events</option>
+                        <option value="conference">Conferences</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="networking">Networking</option>
+                        <option value="training">Training</option>
+                    </select>
+                </div>
+                <button class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">Upcoming Events</h2>
+            <div class="flex space-x-2">
+                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200">
+                    Popular
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200">
+                    Newest
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200">
+                    Soonest
+                </button>
+            </div>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            @foreach (var eventItem in Model.Events)
+            {
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="@eventItem.Image"
+                             alt="@eventItem.Title"
+                             class="w-full h-full object-cover"
+                             loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                            </svg>
+                            @eventItem.Location
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">@eventItem.Title</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-2">@eventItem.Description</p>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-sm text-gray-500">
+                                    @eventItem.Date.ToString("MMM dd, yyyy") • @eventItem.Time
+                                </span>
+                            </div>
+                            <a asp-page="Event_Details"
+                               asp-route-id="@eventItem.Id"
+                               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                <a href="#" class="inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Previous</span>
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" aria-current="page" class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 inline-flex items-center px-4 py-2 border text-sm font-medium"> 1 </a>
+                <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 inline-flex items-center px-4 py-2 border text-sm font-medium"> 2 </a>
+                <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 inline-flex items-center px-4 py-2 border text-sm font-medium"> 3 </a>
+                <a href="#" class="inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Next</span>
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </nav>
         </div>
     </div>
 </div>
 
-<!-- Events Grid -->
-<div id="event-container-in-events" class="event-grid fade-in">
-    @foreach (var eventItem in Model.Events)
-    {
-        <div class="event-card">
-            <div class="event-content">
-                <h3 class="event-title">@eventItem.Title</h3>
-                <p class="event-description">@eventItem.Description</p>
-                <p><strong>Location:</strong> @eventItem.Location</p>
-                <p><strong>Date:</strong> @eventItem.Date.ToString("MMMM dd, yyyy")</p>
-                <p><strong>Time:</strong> @eventItem.Time</p>
-                <a asp-page="Event_Details" asp-route-id="@eventItem.Id" class="btn btn-outline-primary">Learn more</a>
-            </div>
-        </div>
-    }
-</div>
-
 @section Scripts {
+    <script>
+        // Simple search functionality
+        document.getElementById('search-events').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const eventCards = document.querySelectorAll('[data-event-title]');
+
+            eventCards.forEach(card => {
+                const title = card.getAttribute('data-event-title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 }

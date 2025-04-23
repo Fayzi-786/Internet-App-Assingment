@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "flowbite.min.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.menu-item {
+    @apply size-7 rounded-full text-white hover:scale-150 hover:cursor-pointer;
+    @apply duration-700 z-[4] relative;
+}
+
+.app-input {
+    @apply px-2 py-1 rounded-xl border border-gray-300 !outline-none;
+}
+
+.app-button {
+    @apply px-3 py-2 border border-gray-300 text-white rounded-xl;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('../Quicksand.ttf');
+    font-weight: 400
+}
+
+* {
+    font-family: myFont;
+    overflow: hidden;
+}
+
+td {
+    @apply border border-gray-300 text-center p-1;
+}
+
+.pageButton {
+    @apply px-3 py-1 rounded-lg bg-cyan-50 mx-1 border border-gray-300;
+}

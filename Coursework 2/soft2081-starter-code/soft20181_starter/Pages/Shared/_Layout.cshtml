@@ -1,123 +1,126 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Find and discover amazing events, bootcamps, conferences, and meetings on our platform." />
-    <link rel="stylesheet" href="~/css/index.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and discover amazing events, bootcamps, conferences, and meetings on our platform.">
     <title>@ViewBag.Title</title>
-    @RenderSection("Styles", required: false)
 
-    <style>
-
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #e7e7e7;
-            padding: 1rem 0;
-        }
-
-        .navbar-nav .nav-link {
-            color: #555;
-            font-weight: 500;
-            padding: 10px 15px;
-            transition: color 0.3s ease;
-        }
-
-            .navbar-nav .nav-link:hover {
-                color: #007bff;
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            600: '#2563eb',
+                        }
+                    }
+                }
             }
-
-        .navbar-brand img {
-            max-height: 60px;
         }
+    </script>
 
-        
-    </style>
+    <!-- Flowbite CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- SweetAlert2 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- External JS CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @RenderSection("Styles", required: false)
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
-            <div class="container">
-                <!-- Brand -->
-                <a class="navbar-brand d-flex align-items-center" href="/">
-                    <img src="~/Assets/images/logo.png" alt="GatherUp" class="me-2" style="max-height: 50px;" />
-                    <span class="fw-bold text-dark">GatherUp</span>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="~/Assets/images/logo.png" alt="GatherUp" class="h-10 w-auto">
+                    <span class="text-xl font-bold text-gray-800">GatherUp</span>
                 </a>
 
-                <!-- Toggler -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden items-center space-x-4">
+                    <button data-collapse-toggle="navbar-menu" type="button"
+                            class="p-2 text-gray-500 rounded-lg hover:bg-gray-100"
+                            aria-controls="navbar-menu" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <partial name="_LoginPartial" class="md:hidden" />
+                </div>
 
-                <!-- Nav items -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="/Events">Events</a>
-                        </li>
-						<li class="nav-item">
-							<a class="nav-link text-dark fw-medium" href="/MyEvents">My Events</a>
-						</li>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <!-- Nav links -->
+                    <ul class="flex space-x-6 text-sm font-medium">
+                        <li><a href="/" class="text-gray-700 hover:text-primary-600 transition-colors">Home</a></li>
+                        <li><a href="/Events" class="text-gray-700 hover:text-primary-600 transition-colors">Events</a></li>
+                        <li><a href="/MyEvents" class="text-gray-700 hover:text-primary-600 transition-colors">My Events</a></li>
                         @if (User.IsInRole("Admin"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark fw-medium" href="/Admin/Events/Index">Manage Events</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark fw-medium" href="/ManageUser">Users</a>
-							</li>
+                            <li><a href="/Admin/Events/Index" class="text-gray-700 hover:text-primary-600 transition-colors">Manage Events</a></li>
+                            <li><a href="/ManageUser" class="text-gray-700 hover:text-primary-600 transition-colors">Users</a></li>
                         }
-                    
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="/Contact">Contact</a>
-                        </li>
+                        <li><a href="/Contact" class="text-gray-700 hover:text-primary-600 transition-colors">Contact</a></li>
                     </ul>
 
-                    <!-- Login/Welcome Section aligned right -->
-                    <div class="d-flex align-items-center">
+                    <!-- Login/Welcome -->
+                    <div class="ml-6">
                         <partial name="_LoginPartial" />
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white border-t" id="navbar-menu">
+            <ul class="px-4 py-2 space-y-2 text-sm font-medium">
+                <li><a href="/" class="block py-2 text-gray-700 hover:text-primary-600">Home</a></li>
+                <li><a href="/Events" class="block py-2 text-gray-700 hover:text-primary-600">Events</a></li>
+                <li><a href="/MyEvents" class="block py-2 text-gray-700 hover:text-primary-600">My Events</a></li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li><a href="/Admin/Events/Index" class="block py-2 text-gray-700 hover:text-primary-600">Manage Events</a></li>
+                    <li><a href="/ManageUser" class="block py-2 text-gray-700 hover:text-primary-600">Users</a></li>
+                }
+                <li><a href="/Contact" class="block py-2 text-gray-700 hover:text-primary-600">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-
-    <main class="container my-4">
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 sm:px-6 py-8">
         @RenderBody()
     </main>
-    
-    <footer class="footer text-center">
-        <p><strong>Shaheerullah Fayzi</strong></p>
-        <p>
-            Contact:
-            <a href="mailto:shaheerullahfayzi@example.com">shaheer.fayzi@gmail.com</a>
-        </p>
-        <p>&copy; 2025 Shaheerullah Fayzi. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="font-medium">Shaheerullah Fayzi</p>
+            <p class="mt-1">
+                Contact:
+                <a href="mailto:shaheer.fayzi@gmail.com" class="text-primary-600 hover:underline">
+                    shaheer.fayzi@gmail.com
+                </a>
+            </p>
+            <p class="mt-1">&copy; 2025 Shaheerullah Fayzi. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="~/js/axios.min.js"></script>
-    <script src="~/js/flowbite.min.js"></script>
-    <script src="~/js/sweetalert2.all.min.js"></script>
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

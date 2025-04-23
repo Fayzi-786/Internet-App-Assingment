@@ -7,11 +7,10 @@ wwwroot\Assets\images\summit.jpg
 wwwroot\Assets\images\tech.jpg
 wwwroot\Assets\images\tech3.jpg
 wwwroot\Assets\images\unlock-potential.jpg
-wwwroot\css\contact.css
-wwwroot\css\Event.css
-wwwroot\css\event-details.css
-wwwroot\css\index.css
-wwwroot\css\site.css
+wwwroot\css\flowbite.min.css
+wwwroot\css\input.css
+wwwroot\css\output.css
+wwwroot\css\sweetalert2.min.css
 wwwroot\favicon.ico
 wwwroot\js\axios.min.js
 wwwroot\js\flowbite.min.js
@@ -74,5 +73,7 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\uploads\478d6d3d-d3bc-47e7-92e0-de2a41c7b956.jpg
 wwwroot\uploads\6ed5b4c2-942c-4c9a-97d0-60a95809b5e4.jpg
+wwwroot\uploads\c1da0032-e12b-4188-9975-a08f059449ae.jpg
 wwwroot\vue\vue.js

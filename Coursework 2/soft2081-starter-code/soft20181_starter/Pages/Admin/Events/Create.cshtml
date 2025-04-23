@@ -4,49 +4,55 @@
     ViewData["Title"] = "Create Event";
 }
 
-<h2 class="mb-4">@ViewData["Title"]</h2>
+<div class="min-h-screen bg-gray-50 py-10">
+    <div class="max-w-3xl mx-auto px-6 sm:px-8 bg-white shadow-md rounded-2xl p-8">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">@ViewData["Title"]</h2>
 
-<form method="post" enctype="multipart/form-data" class="row g-3 needs-validation">
-    <div class="col-md-6">
-        <label asp-for="Event.Title" class="form-label"></label>
-        <input asp-for="Event.Title" class="form-control" />
-        <span asp-validation-for="Event.Title" class="text-danger"></span>
-    </div>
+        <form method="post" enctype="multipart/form-data" class="space-y-6">
+            <div>
+                <label asp-for="Event.Title" class="block text-sm font-medium text-gray-700">Event Title</label>
+                <input asp-for="Event.Title" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                <span asp-validation-for="Event.Title" class="text-red-500 text-sm"></span>
+            </div>
 
-    <div class="col-md-6">
-        <label asp-for="Event.Location" class="form-label"></label>
-        <input asp-for="Event.Location" class="form-control" />
-        <span asp-validation-for="Event.Location" class="text-danger"></span>
-    </div>
+            <div>
+                <label asp-for="Event.Location" class="block text-sm font-medium text-gray-700">Location</label>
+                <input asp-for="Event.Location" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                <span asp-validation-for="Event.Location" class="text-red-500 text-sm"></span>
+            </div>
 
-    <div class="col-md-12">
-        <label asp-for="Event.Description" class="form-label"></label>
-        <textarea asp-for="Event.Description" class="form-control" rows="3"></textarea>
-        <span asp-validation-for="Event.Description" class="text-danger"></span>
-    </div>
+            <div>
+                <label asp-for="Event.Description" class="block text-sm font-medium text-gray-700">Description</label>
+                <textarea asp-for="Event.Description" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                <span asp-validation-for="Event.Description" class="text-red-500 text-sm"></span>
+            </div>
 
-    <div class="col-md-6">
-        <label asp-for="Event.Date" class="form-label"></label>
-        <input asp-for="Event.Date" class="form-control" type="date" />
-        <span asp-validation-for="Event.Date" class="text-danger"></span>
-    </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label asp-for="Event.Date" class="block text-sm font-medium text-gray-700">Date</label>
+                    <input asp-for="Event.Date" type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                    <span asp-validation-for="Event.Date" class="text-red-500 text-sm"></span>
+                </div>
 
-    <div class="col-md-6">
-        <label asp-for="Event.Time" class="form-label"></label>
-        <input asp-for="Event.Time" class="form-control" type="time" />
-        <span asp-validation-for="Event.Time" class="text-danger"></span>
-    </div>
+                <div>
+                    <label asp-for="Event.Time" class="block text-sm font-medium text-gray-700">Time</label>
+                    <input asp-for="Event.Time" type="time" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+                    <span asp-validation-for="Event.Time" class="text-red-500 text-sm"></span>
+                </div>
+            </div>
 
-    <div class="col-md-12">
-        <label class="form-label">Upload Image</label>
-        <input type="file" name="ImageFile" class="form-control" accept="image/*" />
-    </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Upload Image</label>
+                <input type="file" name="ImageFile" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 transition" />
+            </div>
 
-    <div class="col-12 mt-4">
-        <button type="submit" class="btn btn-primary">Create Event</button>
-        <a asp-page="Index" class="btn btn-secondary ms-2">Cancel</a>
+            <div class="flex justify-end space-x-4 pt-6">
+                <button type="submit" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition">Create Event</button>
+                <a asp-page="Index" class="px-5 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition">Cancel</a>
+            </div>
+        </form>
     </div>
-</form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

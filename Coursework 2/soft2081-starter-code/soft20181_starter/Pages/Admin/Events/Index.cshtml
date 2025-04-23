@@ -5,78 +5,77 @@
 }
 @Html.AntiForgeryToken()
 
-<h1>@ViewData["Title"]</h1>
+<div class="min-h-screen bg-gray-50 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-900">Manage Events</h1>
+            <a class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition"
+               asp-page="/Admin/Events/Create">Create New Event</a>
+        </div>
 
-<div class="mb-3">
-    <a class="btn btn-success" asp-page="/Admin/Events/Create">Create New Event</a>
+        <div class="overflow-x-auto bg-white shadow-md rounded-2xl">
+            <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+                <thead class="bg-gray-100 text-gray-700 uppercase text-xs">
+                    <tr>
+                        <th class="px-6 py-4">Event Name</th>
+                        <th class="px-6 py-4">Date</th>
+                        <th class="px-6 py-4">Location</th>
+                        <th class="px-6 py-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    @foreach (var eventItem in Model.Events)
+                    {
+                        <tr id="event-@eventItem.Id" class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-medium text-gray-900">@eventItem.Title</td>
+                            <td class="px-6 py-4">@eventItem.Date.ToString("MMM dd, yyyy")</td>
+                            <td class="px-6 py-4">@eventItem.Location</td>
+                            <td class="px-6 py-4 space-x-2">
+                                
+                                <a asp-page="/Admin/Events/Edit" asp-route-id="@eventItem.Id"
+                                   class="inline-block bg-yellow-500 text-white px-3 py-1 rounded-md hover:bg-yellow-600 transition">Edit</a>
+                                <button type="button"
+                                        class="inline-block bg-red-600 text-white px-3 py-1 rounded-md hover:bg-red-700 transition"
+                                        onclick="removeEvent('?handler=DeleteEvent', @eventItem.Id)">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Event Name</th>
-            <th>Date</th>
-            <th>Location</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var eventItem in Model.Events)
-        {
-            <tr id="event-@eventItem.Id">
-                <td>@eventItem.Title</td>
-                <td>@eventItem.Date.ToString("MM/dd/yyyy")</td>
-                <td>@eventItem.Location</td>
-                <td>
-                    <a class="btn btn-primary " asp-page="/Admin/Events/Details" asp-route-id="@eventItem.Id">Details</a>
-                    <a class="btn btn-primary " asp-page="/Admin/Events/Edit" asp-route-id="@eventItem.Id">Edit</a>
-                    <button type="button" class="btn btn-danger" onclick="removeEvent('?handler=DeleteEvent', @eventItem.Id)">Delete</button>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-
 @section Scripts {
-
+ 
     <script>
-            
-            function removeEvent(url,id){
-                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+        function removeEvent(url, id) {
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
 
-                Swal.fire({
-                    title:"Are you sure",
-                    text:"You can not undo this action!",
-                    icon:"warning",
-                    showCancelButton:true,
-                    confirmButtonColor: "#d33",
-                    confirmButtonText:"Yes, delete it!"
-                }).then(res => {
-                    if(res.isConfirmed){
-                    console.log(`${url}${+id}`)
-                        axios.post(`${url}&id=${+id}`,null,{
-                             headers: {
-            'RequestVerificationToken': token
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This action cannot be undone!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#3085d6",
+                confirmButtonText: "Yes, delete it!"
+            }).then(res => {
+                if (res.isConfirmed) {
+                    axios.post(`${url}&id=${id}`, null, {
+                        headers: {
+                            'RequestVerificationToken': token
+                        }
+                    }).then(_ => {
+                        Swal.fire("Deleted!", "The event has been removed.", "success");
+                        document.getElementById(`event-${id}`).remove();
+                    }).catch(err => {
+                        Swal.fire("Could not Delete!", "Server is busy or error occurred.", "error");
+                    });
+                }
+            });
         }
-                        }).then(_ => {
-                             Swal.fire({
-                              title: "Deleted!",
-                              text: "Your file has been deleted.",
-                              icon: "success"
-                            });
-                            // remove the row from table
-                            document.getElementById(`event-${id}`).innerHTML = "";
-                        }).catch(err => {
-                            Swal.fire({
-                              title: "Could not Delete!",
-                              text: "Server is busy.",
-                              icon: "warning"
-                            });
-                        })
-                    }
-                })
-            }
-        
     </script>
 }

@@ -1,44 +1,112 @@
 ﻿@page
 @model Event_DetailsModel
-
 @{
     ViewBag.Title = "Event Details";
-    
 }
 @Html.AntiForgeryToken()
 
-<div class="container py-5">
-    <div class="card shadow-lg rounded overflow-hidden border-0">
-        <div class="row g-0">
-            
-            @if (!string.IsNullOrEmpty(Model.EventDetails.Image))
-            {
-                <div class="col-md-5">
-                    <img src="@Model.EventDetails.Image" class="img-fluid h-100 object-fit-cover" style="object-fit: cover;" alt="Event Image">
+<div class="min-h-screen bg-gray-50">
+    <!-- Event Header -->
+    <div class="relative bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex justify-between items-start">
+                <div>
+                    <nav class="flex mb-4" aria-label="Breadcrumb">
+                        <ol class="flex items-center space-x-2">
+                            <li>
+                                <div class="flex items-center">
+                                    <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-700">Home</a>
+                                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400 mx-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <a href="/Events" class="text-sm font-medium text-gray-500 hover:text-gray-700">Events</a>
+                                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400 mx-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text-sm font-medium text-gray-400">@Model.EventDetails.Title</span>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">@Model.EventDetails.Title</h1>
                 </div>
-            }
-            <div class="col-md-7">
-                <div class="card-body p-4">
-                    <h2 class="card-title display-5">@Model.EventDetails.Title</h2>
-                    <p class="text-muted mb-1"><i class="bi bi-calendar-event me-2"></i> @Model.EventDetails.Date.ToString("MMMM dd, yyyy")</p>
-                    <p class="text-muted mb-3"><i class="bi bi-geo-alt me-2"></i> <strong>@Model.EventDetails.Location</strong></p>
+                <a href="/Events" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Back to Events
+                </a>
+            </div>
+        </div>
+    </div>
 
-                    <p class="card-text lead">@Model.EventDetails.Description</p>
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="md:flex">
+                @if (!string.IsNullOrEmpty(Model.EventDetails.Image))
+                {
+                    <div class="md:w-1/2">
+                        <img src="@Model.EventDetails.Image" alt="Event Image" class="w-full h-full object-cover" style="min-height: 400px;">
+                    </div>
+                }
+                <div class="p-8 md:w-1/2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                            <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Date & Time</p>
+                            <p class="font-medium text-gray-900">@Model.EventDetails.Date.ToString("MMMM dd, yyyy") • @Model.EventDetails.Time</p>
+                        </div>
+                    </div>
 
-                    <div class="mt-4">
-                        <a href="/Events" class="btn btn-outline-primary rounded-pill px-4">Back to Events</a>
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="flex-shrink-0 bg-indigo-100 p-3 rounded-lg">
+                            <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Location</p>
+                            <p class="font-medium text-gray-900">@Model.EventDetails.Location</p>
+                        </div>
+                    </div>
+
+                    <div class="prose prose-indigo max-w-none text-gray-500 mb-8">
+                        <p class="text-lg">@Model.EventDetails.Description</p>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-6">
                         @if (User.Identity.IsAuthenticated)
                         {
                             <button id="registerButton"
-                                    class="btn @(Model.IsRegistered ? "btn-danger" : "btn-primary") rounded-pill px-4"
+                                    class="w-full md:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white @(Model.IsRegistered ? "bg-red-600 hover:bg-red-700" : "bg-indigo-600 hover:bg-indigo-700") focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
                                     data-event-id="@Model.EventDetails.Id"
                                     data-is-registered="@Model.IsRegistered.ToString().ToLower()">
-                                @(Model.IsRegistered ? "Unregister" : "Register for Event")
+                                @(Model.IsRegistered ? "Unregister from Event" : "Register for Event")
+                                <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                                </svg>
                             </button>
                         }
                         else
                         {
-                            <a href="/Identity/Account/Login" class="btn btn-primary rounded-pill px-4">Login to Register</a>
+                            <a href="/Identity/Account/Login" class="w-full md:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Login to Register
+                                <svg class="ml-2 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
                         }
                     </div>
                 </div>
@@ -47,74 +115,57 @@
     </div>
 </div>
 
-@section Styles {
-   
-    <style>
-        .card-title {
-            font-weight: 700;
-        }
-
-        .object-fit-cover {
-            object-fit: cover;
-        }
-
-        .card-body p i {
-            color: #0d6efd;
-        }
-    </style>
-}
-
 @section Scripts {
-   
     <script>
-        document.getElementById('registerButton').addEventListener('click', function() {
-                            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
-
+        document.getElementById('registerButton')?.addEventListener('click', function() {
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
             const eventId = this.getAttribute('data-event-id');
-            const isRegistered = this.textContent.trim() === 'Unregister';
+            const isRegistered = this.getAttribute('data-is-registered') === 'true';
             const url = isRegistered ? '?handler=Unregister' : '?handler=Register';
-            console.log(url);
-            axios.post(`${url}&eventId=${eventId}`,null,{
-                 headers: {
-            'RequestVerificationToken': token
-        }
+
+            axios.post(`${url}&eventId=${eventId}`, null, {
+                headers: {
+                    'RequestVerificationToken': token
+                }
             })
-                .then(response => {
-                    if (response.data.success) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Success!',
-                            text: isRegistered ? 'You have been unregistered from the event.' : 'You have successfully registered for the event!',
-                            confirmButtonColor: '#0d6efd'
-                        });
-
-                        // Toggle button state
-                        if (isRegistered) {
-                            this.textContent = 'Register for Event';
-                            this.classList.remove('btn-danger');
-                            this.classList.add('btn-primary');
-                        } else {
-                            this.textContent = 'Unregister';
-                            this.classList.remove('btn-primary');
-                            this.classList.add('btn-danger');
-                        }
-                    }
-                })
-                .catch(error => {
-                    let errorMessage = 'An error occurred. Please try again.';
-                    if (error.response && error.response.status === 409) {
-                        errorMessage = error.response.data;
-                    } else if (error.response && error.response.status === 401) {
-                        errorMessage = 'Please login to register for events.';
-                    }
-
+            .then(response => {
+                if (response.data.success) {
                     Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: errorMessage,
-                        confirmButtonColor: '#0d6efd'
+                        icon: 'success',
+                        title: 'Success!',
+                        text: isRegistered ? 'You have been unregistered from the event.' : 'You have successfully registered for the event!',
+                        confirmButtonColor: '#000'
                     });
+
+                    // Toggle button state
+                    if (isRegistered) {
+                        this.textContent = 'Register for Event';
+                        this.classList.remove('bg-red-600', 'hover:bg-red-700');
+                        this.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+                        this.setAttribute('data-is-registered', 'false');
+                    } else {
+                        this.textContent = 'Unregister from Event';
+                        this.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                        this.classList.add('bg-red-600', 'hover:bg-red-700');
+                        this.setAttribute('data-is-registered', 'true');
+                    }
+                }
+            })
+            .catch(error => {
+                let errorMessage = 'An error occurred. Please try again.';
+                if (error.response && error.response.status === 409) {
+                    errorMessage = error.response.data;
+                } else if (error.response && error.response.status === 401) {
+                    errorMessage = 'Please login to register for events.';
+                }
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: errorMessage,
+                    confirmButtonColor: '#6366f1'
                 });
+            });
         });
     </script>
 }
