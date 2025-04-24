@@ -70,60 +70,99 @@ namespace soft20181_starter.Pages
                 return NotFound("Event not found");
             }
 
+
+            // Generate PDF using NReco
             var html = $@"
-            <html>
-            <head>
-                <style>
-                    body {{ font-family: Arial, sans-serif; }}
-                    .ticket {{ 
-                        border: 2px solid #000; 
-                        padding: 20px; 
-                        width: 300px;
-                        margin: 0 auto;
-                    }}
-                    .header {{ 
-                        text-align: center; 
-                        margin-bottom: 20px;
-                    }}
-                    .event-title {{
-                        font-size: 18px;
-                        font-weight: bold;
-                        margin-bottom: 15px;
-                    }}
-                    .detail {{ margin-bottom: 10px; }}
-                    .qr-placeholder {{
-                        width: 100px;
-                        height: 100px;
-                        background-color: #f0f0f0;
-                        margin: 15px auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }}
-                </style>
-            </head>
-            <body>
-                <div class='ticket'>
-                    <div class='header'>
-                        <h1>EVENT TICKET</h1>
-                        <p>Admit One</p>
-                    </div>
-                    
-                    <div class='event-title'>{eventDetails.Title}</div>
-                    
-                    <div class='detail'><strong>Attendee:</strong> {User.Identity?.Name}</div>
-                    <div class='detail'><strong>Date:</strong> {eventDetails.Date.ToString("MMMM dd, yyyy")}</div>
-                    <div class='detail'><strong>Time:</strong> {eventDetails.Time}</div>
-                    <div class='detail'><strong>Location:</strong> {eventDetails.Location}</div>
-                    
-                    <div class='qr-placeholder'>QR Code</div>
-                    
-                    <div style='text-align: center; margin-top: 20px; font-size: 12px;'>
-                        Present this ticket at the event entrance
-                    </div>
+        <html>
+        <head>
+            <style>
+                body {{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 20px;
+                }}
+                .ticket {{
+                    background: #fff;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    padding: 30px;
+                    max-width: 400px;
+                    margin: auto;
+                    border-left: 5px solid #4A90E2;
+                }}
+                .header {{
+                    text-align: center;
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 15px;
+                    margin-bottom: 20px;
+                }}
+                .header h1 {{
+                    font-size: 24px;
+                    color: #4A90E2;
+                    margin: 0;
+                }}
+                .header p {{
+                    font-size: 14px;
+                    color: #888;
+                    margin: 4px 0 0;
+                }}
+                .event-title {{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    color: #333;
+                }}
+                .detail {{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #555;
+                }}
+                .detail strong {{
+                    color: #000;
+                }}
+                .qr-placeholder {{
+                    width: 120px;
+                    height: 120px;
+                    background-color: #e0e0e0;
+                    margin: 25px auto 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    color: #777;
+                    border-radius: 6px;
+                }}
+                .footer-note {{
+                    text-align: center;
+                    font-size: 12px;
+                    color: #888;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class='ticket'>
+                <div class='header'>
+                    <h1>EVENT TICKET</h1>
+                    <p>Admit One</p>
                 </div>
-            </body>
-            </html>";
+        
+                <div class='event-title'>{eventDetails.Title}</div>
+        
+                <div class='detail'><strong>Attendee:</strong> {User.Identity?.Name}</div>
+                <div class='detail'><strong>Date:</strong> {eventDetails.Date.ToString("MMMM dd, yyyy")}</div>
+                <div class='detail'><strong>Time:</strong> {eventDetails.Time}</div>
+                <div class='detail'><strong>Location:</strong> {eventDetails.Location}</div>
+        
+                <div class='qr-placeholder'>QR Code</div>
+        
+                <div class='footer-note'>
+                    Present this ticket at the event entrance
+                </div>
+            </div>
+        </body>
+        </html>";
+
 
             var pdf = new HtmlToPdfConverter().GeneratePdf(html);
             return File(pdf, "application/pdf", $"Ticket-{eventDetails.Title}-{eventDetails.Id}.pdf");
