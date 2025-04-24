@@ -23,6 +23,9 @@ namespace soft20181_starter.Models
                 entity.Property(e => e.Title).HasMaxLength(100);
                 entity.Property(e => e.Description).HasMaxLength(500);
                 entity.Property(e => e.Location).HasMaxLength(100);
+                entity.Property(e => e.Category)  // Add this
+                               .HasMaxLength(50)
+                               .IsRequired(false);
                 entity.Property(e => e.Image).HasMaxLength(100);
             });
         }

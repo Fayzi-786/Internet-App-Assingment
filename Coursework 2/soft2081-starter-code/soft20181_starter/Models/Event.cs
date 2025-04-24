@@ -25,6 +25,10 @@ namespace soft20181_starter.Models
         [Required(ErrorMessage = "Time is required")]
         public string Time { get; set; }
 
+        [StringLength(50, ErrorMessage = "Category cannot exceed 50 characters")]
+        public string Category { get; set; } = "";
         public string Image { get; set; } = "";
+
+     
     }
 }

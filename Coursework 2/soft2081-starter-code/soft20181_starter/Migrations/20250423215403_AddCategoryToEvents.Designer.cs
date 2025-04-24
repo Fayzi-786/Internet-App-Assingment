@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using soft20181_starter.Models;
 
@@ -10,9 +11,11 @@ using soft20181_starter.Models;
 namespace soft20181_starter.Migrations
 {
     [DbContext(typeof(EventAppDbContext))]
-    partial class EventAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250423215403_AddCategoryToEvents")]
+    partial class AddCategoryToEvents
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
@@ -196,7 +199,7 @@ namespace soft20181_starter.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Category")
-                        .HasMaxLength(50)
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Date")
