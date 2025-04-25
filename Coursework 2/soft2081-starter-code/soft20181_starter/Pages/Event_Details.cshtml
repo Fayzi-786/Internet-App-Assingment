@@ -117,7 +117,7 @@
 
 @section Scripts {
     <script>
-        document.getElementById('registerButton')?.addEventListener('click', function() {
+        document.getElementById('registerButton')?.addEventListener('click', function () {
             const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
             const eventId = this.getAttribute('data-event-id');
             const isRegistered = this.getAttribute('data-is-registered') === 'true';
@@ -128,44 +128,62 @@
                     'RequestVerificationToken': token
                 }
             })
-            .then(response => {
-                if (response.data.success) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Success!',
-                        text: isRegistered ? 'You have been unregistered from the event.' : 'You have successfully registered for the event!',
-                        confirmButtonColor: '#000'
-                    });
-
-                    // Toggle button state
-                    if (isRegistered) {
-                        this.textContent = 'Register for Event';
-                        this.classList.remove('bg-red-600', 'hover:bg-red-700');
-                        this.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
-                        this.setAttribute('data-is-registered', 'false');
-                    } else {
-                        this.textContent = 'Unregister from Event';
-                        this.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
-                        this.classList.add('bg-red-600', 'hover:bg-red-700');
-                        this.setAttribute('data-is-registered', 'true');
+                .then(response => {
+                    if (response.data.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: isRegistered ? 'You have been unregistered from the event.' : 'You have successfully registered for the event!',
+                            confirmButtonText: '<span style="padding: 10px 20px; border-radius: 8px; font-weight: 500; background: #10b981; color: white; transition: all 0.2s">OK</span>',
+                            buttonsStyling: false,
+                            confirmButtonColor: 'transparent',
+                            didOpen: () => {
+                                const confirmBtn = Swal.getConfirmButton();
+                                confirmBtn.onmouseover = () =>
+                                    confirmBtn.firstElementChild.style.background = '#059669';
+                                confirmBtn.onmouseout = () =>
+                                    confirmBtn.firstElementChild.style.background = '#10b981';
+                            }
+                        }).then(() => {
+                            // Toggle button state after confirmation
+                            if (isRegistered) {
+                                this.textContent = 'Register for Event';
+                                this.classList.replace('bg-red-600', 'bg-indigo-600');
+                                this.classList.replace('hover:bg-red-700', 'hover:bg-indigo-700');
+                                this.setAttribute('data-is-registered', 'false');
+                            } else {
+                                this.textContent = 'Unregister from Event';
+                                this.classList.replace('bg-indigo-600', 'bg-red-600');
+                                this.classList.replace('hover:bg-indigo-700', 'hover:bg-red-700');
+                                this.setAttribute('data-is-registered', 'true');
+                            }
+                        });
                     }
-                }
-            })
-            .catch(error => {
-                let errorMessage = 'An error occurred. Please try again.';
-                if (error.response && error.response.status === 409) {
-                    errorMessage = error.response.data;
-                } else if (error.response && error.response.status === 401) {
-                    errorMessage = 'Please login to register for events.';
-                }
+                })
+                .catch(error => {
+                    let errorMessage = 'An error occurred. Please try again.';
+                    if (error.response && error.response.status === 409) {
+                        errorMessage = error.response.data;
+                    } else if (error.response && error.response.status === 401) {
+                        errorMessage = 'Please login to register for events.';
+                    }
 
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: errorMessage,
-                    confirmButtonColor: '#6366f1'
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: errorMessage,
+                        confirmButtonText: '<span style="padding: 10px 20px; border-radius: 8px; font-weight: 500; background: #ef4444; color: white; transition: all 0.2s">OK</span>',
+                        buttonsStyling: false,
+                        confirmButtonColor: 'transparent',
+                        didOpen: () => {
+                            const confirmBtn = Swal.getConfirmButton();
+                            confirmBtn.onmouseover = () =>
+                                confirmBtn.firstElementChild.style.background = '#dc2626';
+                            confirmBtn.onmouseout = () =>
+                                confirmBtn.firstElementChild.style.background = '#ef4444';
+                        }
+                    });
                 });
-            });
         });
     </script>
 }

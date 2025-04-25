@@ -114,10 +114,13 @@
                     text: "You won't be able to attend this event if you unregister!",
                     icon: 'warning',
                     showCancelButton: true,
-                    confirmButtonColor: '#dc2626',
-                    cancelButtonColor: '#3b82f6',
-                    confirmButtonText: 'Yes, unregister!'
+                    confirmButtonColor: '#b91c1c',  
+                    cancelButtonColor: '#3b82f6',   
+                    confirmButtonText: '<span style="padding: 10px 20px; color: white; background-color: red; margin: 1px; border-radius: 8px; font-weight: 500; border: 1px solid #e5e7eb"> Unregister!</span>',
+                    cancelButtonText: '<span style="padding: 10px 20px; color: white; background-color: green; margin: 1px;  border-radius: 8px; font-weight: 500; border: 1px solid #e5e7eb">Cancel</span>',
+                    buttonsStyling: false  
                 }).then(result => {
+
                     if (!result.isConfirmed) return;
 
                     this.disabled = true;   // prevent double‑clicks
@@ -129,8 +132,17 @@
                     )
                         .then(res => {
                             if (res.data?.success) {
-                                Swal.fire('Unregistered!', 'You have been unregistered.', 'success')
-                                    .then(() => window.location.reload());
+                                Swal.fire({
+                                    title: 'Unregistered!',
+                                    text: 'You have been unregistered.',
+                                    icon: 'success',
+                                    confirmButtonText: '<span style="padding: 10px 20px; border-radius: 8px; font-weight: 500; background-color: #3b82f6; color: white;">OK</span>',
+                                    buttonsStyling: false,
+                                    confirmButtonColor: 'transparent',
+                                    customClass: {
+                                        container: 'swal2-container-custom'
+                                    }
+                                }).then(() => window.location.reload());
                             } else {
                                 Swal.fire('Error', 'Server could not unregister you.', 'error');
                                 this.disabled = false;
