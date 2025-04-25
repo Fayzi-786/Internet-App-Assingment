@@ -134,7 +134,6 @@ namespace soft20181_starter.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
-                // Set FirstName and LastName properties
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
 
@@ -146,7 +145,6 @@ namespace soft20181_starter.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    // Ensure Roles Exist
                     if (!await _roleManager.RoleExistsAsync("Admin"))
                     {
                         await _roleManager.CreateAsync(new IdentityRole("Admin"));
@@ -156,14 +154,13 @@ namespace soft20181_starter.Areas.Identity.Pages.Account
                         await _roleManager.CreateAsync(new IdentityRole("Visitor"));
                     }
 
-                    // Assign role to the user
-                    if (!(await _userManager.GetUsersInRoleAsync("Admin")).Any())
+                    //if (!(await _userManager.GetUsersInRoleAsync("Admin")).Any())
+                    //{
+                    //    await _userManager.AddToRoleAsync(user, "Admin");  // First user becomes Admin
+                    //}
+                   // else
                     {
-                        await _userManager.AddToRoleAsync(user, "Admin");  // First user becomes Admin
-                    }
-                    else
-                    {
-                        await _userManager.AddToRoleAsync(user, "Visitor");  // Others become Visitors
+                        await _userManager.AddToRoleAsync(user, "Admin");  // Others become Visitors
                     }
 
                     var userId = await _userManager.GetUserIdAsync(user);
