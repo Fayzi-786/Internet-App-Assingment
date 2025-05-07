@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using soft20181_starter.Models;
 
 namespace soft20181_starter.Pages.Admin.Events
 {
+    [Authorize(Roles = "Admin")]
     public class CreateModel : PageModel
     {
         public EventAppDbContext db { get; set; }

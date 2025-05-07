@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using soft20181_starter.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace soft20181_starter.Pages.Admin.Events
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
         private readonly EventAppDbContext _db;
