@@ -28,7 +28,7 @@ namespace soft20181_starter.Pages
         public async Task OnGetAsync()
         {
             IQueryable<Event> query = _dbContext.Events;
-
+            // Checking if the query appeared in Title, Location, Description
             if (!string.IsNullOrEmpty(SearchTerm))
             {
                 query = query.Where(e =>
@@ -42,7 +42,7 @@ namespace soft20181_starter.Pages
                 query = query.Where(e => e.Category != null &&
                     e.Category.ToLower() == CategoryFilter.ToLower());
             }
-
+            //
             Events = await query.OrderBy(e => e.Date).ToListAsync();
         }
     }
