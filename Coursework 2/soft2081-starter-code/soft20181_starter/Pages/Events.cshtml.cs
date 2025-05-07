@@ -42,7 +42,7 @@ namespace soft20181_starter.Pages
                 query = query.Where(e => e.Category != null &&
                     e.Category.ToLower() == CategoryFilter.ToLower());
             }
-            //
+            //Stores the result in the Events list for rendering on the page.
             Events = await query.OrderBy(e => e.Date).ToListAsync();
         }
     }

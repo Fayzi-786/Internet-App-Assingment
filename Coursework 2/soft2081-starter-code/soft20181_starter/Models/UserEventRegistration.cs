@@ -7,7 +7,7 @@ public class UserEventRegistration
     public int EventId { get; set; }
     public DateTime RegistrationDate { get; set; } = DateTime.UtcNow;
 
-    // Navigation properties
+
     public Event Event { get; set; }
     public UsersInfo User { get; set; } // Assuming you have ApplicationUser
 }

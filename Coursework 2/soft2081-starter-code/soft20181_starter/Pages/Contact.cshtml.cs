@@ -7,7 +7,7 @@ namespace soft20181_starter.Pages
     public class ContactModel : PageModel
     {
 
-
+        // injecting Db Context into razor page
         public EventAppDbContext _db { get; set; }
         public ContactModel (EventAppDbContext db)
         {
